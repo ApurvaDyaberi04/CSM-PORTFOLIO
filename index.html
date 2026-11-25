@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apurva Dyaberi — Construction Workshop Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Instrument Serif', 'serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            obsidian: '#090C0E',
+            surface: '#0F1418',
+            surfaceHover: '#141B20',
+            borderDark: '#1E272E',
+            emeraldAccent: '#34D399',
+            tealAccent: '#2DD4BF',
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      background-color: #090C0E;
+      color: #F1F5F9;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+    .serif-italic {
+      font-family: 'Instrument Serif', serif;
+      font-style: italic;
+      font-weight: 400;
+    }
+    .card-glow-1 { background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.14), transparent 60%), #0F1418; }
+    .card-glow-2 { background: radial-gradient(circle at top right, rgba(132, 204, 22, 0.14), transparent 60%), #0F1418; }
+    .card-glow-3 { background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.14), transparent 60%), #0F1418; }
+    .card-glow-4 { background: radial-gradient(circle at top right, rgba(249, 115, 22, 0.14), transparent 60%), #0F1418; }
+    .card-glow-5 { background: radial-gradient(circle at top right, rgba(168, 85, 247, 0.14), transparent 60%), #0F1418; }
+    .card-glow-6 { background: radial-gradient(circle at top right, rgba(234, 179, 8, 0.14), transparent 60%), #0F1418; }
+    
+    @media print {
+      .no-print { display: none !important; }
+      body { background: #090C0E !important; color: #F1F5F9 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .page-break { page-break-before: always; }
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-emeraldAccent selection:text-obsidian">
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 bg-surface text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 text-xs font-mono border border-emeraldAccent/40">
+    <span class="w-2 h-2 rounded-full bg-emeraldAccent animate-ping"></span>
+    <span id="toast-msg">Updated</span>
+  </div>
+
+  <!-- Simple Single Top Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-obsidian/90 backdrop-blur-md border-b border-borderDark">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-2.5 text-xs font-mono">
+        <span class="w-6 h-6 rounded-full bg-emeraldAccent text-obsidian font-bold text-[10px] flex items-center justify-center">AD</span>
+        <span class="text-white font-semibold tracking-tight">Apurva Dyaberi</span>
+      </a>
+
+      <nav class="flex items-center gap-1 sm:gap-2 overflow-x-auto">
+        <a href="#top" class="px-2.5 py-1.5 rounded-full text-xs font-mono text-slate-300 hover:text-white hover:bg-surface transition shrink-0">Overview</a>
+        <a href="#identity" class="px-2.5 py-1.5 rounded-full text-xs font-mono text-slate-300 hover:text-white hover:bg-surface transition shrink-0">Identity</a>
+        <a href="#problem-statements" class="px-2.5 py-1.5 rounded-full text-xs font-mono text-slate-300 hover:text-white hover:bg-surface transition shrink-0">Problems</a>
+        <a href="#sessions" class="px-2.5 py-1.5 rounded-full text-xs font-mono text-slate-300 hover:text-white hover:bg-surface transition shrink-0">Sessions</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="top" class="relative pt-10 pb-12 px-4 sm:px-6 max-w-6xl mx-auto">
+    <div class="relative rounded-3xl overflow-hidden border border-borderDark bg-gradient-to-br from-surface via-obsidian to-[#0D1A18] p-6 sm:p-10 lg:p-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <!-- Left Hero Copy -->
+        <div class="lg:col-span-7 space-y-5 z-10">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emeraldAccent/10 border border-emeraldAccent/25 text-[11px] font-mono uppercase tracking-wider text-emeraldAccent">
+            <span>•</span>
+            <span>School of Civil Engineering — Construction Workshop</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.05] text-white">
+            <span>Apurva</span><br/>
+            <span class="serif-italic text-5xl sm:text-7xl bg-gradient-to-r from-emeraldAccent via-tealAccent to-sky-400 bg-clip-text text-transparent font-normal">Dyaberi</span>
+          </h1>
+
+          <p class="text-sm sm:text-base text-slate-300 leading-relaxed max-w-xl">
+            School of Civil Engineering, KLE Technological University, Hubballi. Six problem statements on one shopping mall project — seven blocks, three basement levels, and the executive decisions behind how a large site actually runs: approvals, layout, stores, survey, waste, labour, and quality.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="#problem-statements" class="px-5 py-2.5 rounded-full text-xs font-semibold bg-gradient-to-r from-emeraldAccent to-tealAccent text-obsidian hover:opacity-95 transition flex items-center gap-2 shadow-lg shadow-emeraldAccent/10">
+              <span>Explore the six problem statements</span>
+              <span>→</span>
+            </a>
+            <a href="#identity" class="px-4 py-2.5 rounded-full text-xs font-medium bg-surface border border-borderDark text-slate-300 hover:text-white transition">
+              Student details
+            </a>
+            <a href="#sessions" class="px-4 py-2.5 rounded-full text-xs font-medium bg-surface border border-borderDark text-slate-300 hover:text-white transition">
+              Working sessions
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Portrait Card with Upload Trigger -->
+        <div class="lg:col-span-5 flex flex-col items-center lg:items-end">
+          <div class="relative w-full max-w-xs rounded-2xl overflow-hidden border border-borderDark bg-obsidian shadow-2xl group">
+            <img 
+              id="hero-portrait-img"
+              src="https://placehold.co/600x720/0F1418/34D399?text=Student+Portrait+%0A(Click+to+Upload+Photo)" 
+        <!-- Right Portrait Card -->
+        <div class="lg:col-span-5 flex flex-col items-center lg:items-end">
+          <div class="relative w-full max-w-xs rounded-2xl overflow-hidden border border-borderDark bg-obsidian shadow-2xl group">
+            <img 
+              id="hero-portrait-img"
+              src="portrait.jpg" 
+              alt="Student Portrait" 
+              class="w-full aspect-[4/5] object-cover"
+            />
+          </div>
+          <span class="text-[11px] font-mono text-slate-500 mt-2">School of Civil Engineering, KLE Technological University</span>
+        </div>
+      </div>
+
+      <!-- Bottom Ticker Bar -->
+      <div class="mt-8 pt-4 border-t border-borderDark/80 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-slate-400">
+        <div><span class="text-emeraldAccent font-bold">1,18,000</span> sq.ft typical floor</div>
+        <span class="text-slate-700">•</span>
+        <div><span class="text-emeraldAccent font-bold">250</span> resident workers</div>
+        <span class="text-slate-700">•</span>
+        <div><span class="text-emeraldAccent font-bold">15</span> days to store launch</div>
+        <span class="text-slate-700">•</span>
+        <div><span class="text-emeraldAccent font-bold">~12,000 m³</span> concrete volume</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Identity Card -->
+  <section id="identity" class="py-6 px-4 sm:px-6 max-w-6xl mx-auto">
+    <div class="rounded-3xl border border-borderDark bg-gradient-to-r from-surface via-surface to-[#0E1E1B] p-6 sm:p-8">
+      <div class="text-[11px] font-mono uppercase tracking-widest text-slate-400">Student Identity</div>
+      <h2 class="text-xl sm:text-2xl font-bold text-white mt-1">Apurva Dyaberi</h2>
+      <p class="text-xs sm:text-sm text-slate-400 mt-0.5">School of Civil Engineering · KLE Technological University, Hubballi, Karnataka</p>
+
+      <div class="mt-5 grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div class="rounded-xl bg-obsidian/80 border border-borderDark p-3.5">
+          <div class="text-[10px] font-mono uppercase text-slate-500">Roll No.</div>
+          <div class="text-sm font-mono font-semibold text-white mt-1">155</div>
+        </div>
+        <div class="rounded-xl bg-obsidian/80 border border-borderDark p-3.5">
+          <div class="text-[10px] font-mono uppercase text-slate-500">USN</div>
+          <div class="text-sm font-mono font-semibold text-white mt-1">01fe23bcv056</div>
+        </div>
+        <div class="rounded-xl bg-obsidian/80 border border-borderDark p-3.5">
+          <div class="text-[10px] font-mono uppercase text-slate-500">Semester</div>
+          <div class="text-sm font-mono font-semibold text-white mt-1">7th</div>
+        </div>
+      </div>
+
+      <div class="mt-3 rounded-xl bg-obsidian/80 border border-borderDark p-3.5">
+        <div class="text-[10px] font-mono uppercase text-slate-500">Group Members</div>
+        <div class="text-xs sm:text-sm font-medium text-slate-200 mt-1">
+          Apurva Dyaberi (01fe23bcv056 · Roll No. 155) &amp; Team Members
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Six Problem Statements Bento Grid -->
+  <section id="problem-statements" class="py-12 px-4 sm:px-6 max-w-6xl mx-auto">
+    <div class="mb-8">
+      <div class="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-emeraldAccent">
+        <span class="w-4 h-px bg-emeraldAccent"></span>
+        <span>The Work</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mt-1">
+        Six problem <span class="serif-italic text-4xl sm:text-5xl text-tealAccent">statements</span>
+      </h2>
+      <p class="text-xs sm:text-sm text-slate-400 mt-2 max-w-2xl">
+        Click into any of the six case-study modules below to inspect the complete problem breakdown, technical calculations, Minutes of Meeting (MoM), site interaction notes, reflection, and conclusion.
+      </p>
+    </div>
+
+    <div id="bento-grid" class="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <!-- Populated dynamically by JS -->
+    </div>
+  </section>
+
+  <!-- Active Case Study Deep-Dive Workspace -->
+  <section id="case-study-workspace" class="py-10 px-4 sm:px-6 max-w-6xl mx-auto">
+    <!-- Top Controls Bar -->
+    <div class="no-print mb-6 flex flex-wrap items-center justify-between gap-3 bg-surface border border-borderDark p-3 rounded-2xl">
+      <div class="flex flex-wrap items-center gap-1.5" id="ps-switcher-pills">
+        <!-- Populated dynamically -->
+      </div>
+      <div class="flex items-center gap-2">
+        <button onclick="toggleShowAll()" id="show-all-btn" class="px-3.5 py-1.5 rounded-full text-xs font-mono border border-borderDark bg-obsidian text-slate-300 hover:border-emeraldAccent transition">
+          Expand All 6 PS
+        </button>
+        <button onclick="resetPortfolio()" class="px-3 py-1.5 rounded-full text-xs font-mono text-rose-400 hover:bg-rose-950/40 transition">
+          Reset
+        </button>
+      </div>
+    </div>
+
+    <!-- Rendered Case Study Container -->
+    <div id="case-study-container" class="space-y-16">
+      <!-- Populated dynamically -->
+    </div>
+  </section>
+
+  <!-- One Mall, Seven Blocks Summary Section -->
+  <section class="py-12 px-4 sm:px-6 max-w-6xl mx-auto border-t border-borderDark">
+    <div class="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-emeraldAccent">
+      <span class="w-4 h-px bg-emeraldAccent"></span>
+      <span>The Project</span>
+    </div>
+    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-1">
+      One mall, <span class="serif-italic text-4xl sm:text-5xl text-tealAccent">seven</span> blocks
+    </h2>
+
+    <div class="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="rounded-2xl bg-surface border border-borderDark p-5">
+        <div class="text-2xl sm:text-3xl font-extrabold text-white">7 <span class="text-xs font-mono font-normal text-slate-400">blocks</span></div>
+        <div class="text-xs text-slate-500 mt-1">Interconnected pathways</div>
+      </div>
+      <div class="rounded-2xl bg-surface border border-borderDark p-5">
+        <div class="text-2xl sm:text-3xl font-extrabold text-white">3 <span class="text-xs font-mono font-normal text-slate-400">levels</span></div>
+        <div class="text-xs text-slate-500 mt-1">Underground parking</div>
+      </div>
+      <div class="rounded-2xl bg-surface border border-borderDark p-5">
+        <div class="text-2xl sm:text-3xl font-extrabold text-white">8 <span class="text-xs font-mono font-normal text-slate-400">acres</span></div>
+        <div class="text-xs text-slate-500 mt-1">Plot footprint in Hubballi</div>
+      </div>
+      <div class="rounded-2xl bg-surface border border-borderDark p-5">
+        <div class="text-2xl sm:text-3xl font-extrabold text-white">~12,000 <span class="text-xs font-mono font-normal text-slate-400">m³</span></div>
+        <div class="text-xs text-slate-500 mt-1">Preliminary concrete volume</div>
+      </div>
+    </div>
+
+    <p class="text-xs sm:text-sm text-slate-400 mt-4">
+      Every problem statement in this portfolio is anchored to the same commercial shopping mall development—spanning statutory approvals, 2-gate site logistics, surveying, reinforcement & formwork wastage control, workforce leveling, and concrete quality assurance.
+    </p>
+  </section>
+
+  <!-- Working Sessions Photo Collage -->
+  <section id="sessions" class="py-12 px-4 sm:px-6 max-w-6xl mx-auto border-t border-borderDark">
+    <div class="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-emeraldAccent">
+      <span class="w-4 h-px bg-emeraldAccent"></span>
+      <span>Evidence</span>
+    </div>
+    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-1">
+      Working <span class="serif-italic text-4xl sm:text-5xl text-tealAccent">sessions</span>
+    </h2>
+    <p class="text-xs sm:text-sm text-slate-400 mt-1">The team in session at KLE Technological University, Hubballi.</p>
+
+    <div class="mt-6 grid grid-cols-1 md:grid-cols-12 gap-4">
+      <!-- Featured Large Session Photo -->
+      <div class="md:col-span-6 relative rounded-2xl overflow-hidden border border-borderDark bg-surface group min-h-[260px]">
+        <img id="session-img-0" src="session1.jpg" alt="Working Session 1" class="w-full h-full object-cover" />
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-obsidian via-obsidian/80 to-transparent p-4">
+          <div class="text-xs font-semibold text-white">Hubballi, Karnataka, India</div>
+          <div class="text-[11px] font-mono text-slate-400">Outdoor CAD & Layout Review Session • Team 5</div>
+        </div>
+      </div>
+
+      <!-- Right 2x2 Session Thumbnails -->
+      <div class="md:col-span-6 grid grid-cols-2 gap-4">
+        <div class="relative rounded-2xl overflow-hidden border border-borderDark bg-surface aspect-video md:aspect-auto">
+          <img id="session-img-1" src="session2.jpg" alt="Working Session 2" class="w-full h-full object-cover" />
+        </div>
+        <div class="relative rounded-2xl overflow-hidden border border-borderDark bg-surface aspect-video md:aspect-auto">
+          <img id="session-img-2" src="session3.jpg" alt="Working Session 3" class="w-full h-full object-cover" />
+        </div>
+        <div class="relative rounded-2xl overflow-hidden border border-borderDark bg-surface aspect-video md:aspect-auto">
+          <img id="session-img-3" src="session4.jpg" alt="Working Session 4" class="w-full h-full object-cover" />
+        </div>
+        <div class="relative rounded-2xl overflow-hidden border border-borderDark bg-surface aspect-video md:aspect-auto">
+          <img id="session-img-4" src="session5.jpg" alt="Working Session 5" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+
+    <p class="text-xs text-slate-400 mt-4 leading-relaxed">
+      Five geotagged working photographs taken at the School of Civil Engineering, KLE Technological University, Hubballi.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-borderDark bg-obsidian py-12 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 text-xs text-slate-400">
+      <div class="md:col-span-4 space-y-2">
+        <div class="text-base font-bold text-white">Apurva Dyaberi</div>
+        <p class="leading-relaxed">
+          School of Civil Engineering, KLE Technological University, Hubballi.<br/>
+          Construction Site Management Workshop Portfolio (USN: 01fe23bcv056 · Roll No: 155).
+        </p>
+      </div>
+      <div class="md:col-span-4 space-y-1.5">
+        <div class="font-mono uppercase text-[11px] text-slate-500">Problem Statements 01–03</div>
+        <ul class="space-y-1">
+          <li><a href="#case-study-workspace" onclick="selectPS(1)" class="hover:text-emeraldAccent">PS-01: Statutory Approvals, Site Layout & Concrete Strategy</a></li>
+          <li><a href="#case-study-workspace" onclick="selectPS(2)" class="hover:text-emeraldAccent">PS-02: Integrated Material Procurement, QC, Store & Accounts</a></li>
+          <li><a href="#case-study-workspace" onclick="selectPS(3)" class="hover:text-emeraldAccent">PS-03: Surveying, Setting-Out & Benchmark Management</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-4 space-y-1.5">
+        <div class="font-mono uppercase text-[11px] text-slate-500">Problem Statements 04–06</div>
+        <ul class="space-y-1">
+          <li><a href="#case-study-workspace" onclick="selectPS(4)" class="hover:text-emeraldAccent">PS-04: Steel & Formwork Wastage Control</a></li>
+          <li><a href="#case-study-workspace" onclick="selectPS(5)" class="hover:text-emeraldAccent">PS-05: Stage-Wise Labour Planning & Workforce Management</a></li>
+          <li><a href="#case-study-workspace" onclick="selectPS(6)" class="hover:text-emeraldAccent">PS-06: Concrete Cube Failure Investigation & QA</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // =========================================================================
+    // CENTRALIZED LOCAL IMAGE ASSETS CONFIGURATION (ORGANIZED BY PROBLEM STATEMENT)
+    // Place all image files in the SAME folder as this index.html file,
+    // and update the filenames below as needed.
+    // =========================================================================
+    const IMAGE_ASSETS = {
+      // 1. Student Portrait (Hero Section)
+      portrait: "Profile photo.jpg",
+
+      // 2. Working Sessions Collage (5 photos)
+      sessions: [
+        "session1.jpg",
+        "session2.jpg",
+        "session3.jpg",
+        "session4.jpg",
+        "session5.jpg"
+      ],
+
+      // 3. Problem Statement 01 Images
+      ps1: {
+        mom1: "discussion.jpeg",
+        mom2: "discussion 2.jpeg",
+        mom3: "ps1-mom3.jpg",
+        siteVisit: "ps1-site.jpg"
+      },
+
+      // 4. Problem Statement 02 Images
+      ps2: {
+        mom1: "ps2-mom1.jpg",
+        mom2: "ps2-mom2.jpg",
+        mom3: "ps2-mom3.jpg",
+        siteVisit: "ps2-site.jpg"
+      },
+
+      // 5. Problem Statement 03 Images
+      ps3: {
+        mom1: "ps3-mom1.jpg",
+        mom2: "ps3-mom2.jpg",
+        mom3: "ps3-mom3.jpg",
+        siteVisit: "ps3-site.jpg"
+      },
+
+      // 6. Problem Statement 04 Images
+      ps4: {
+        mom1: "ps4-mom1.jpg",
+        mom2: "ps4-mom2.jpg",
+        mom3: "ps4-mom3.jpg",
+        siteVisit: "ps4-site.jpg"
+      },
+
+      // 7. Problem Statement 05 Images
+      ps5: {
+        mom1: "ps5-mom1.jpg",
+        mom2: "ps5-mom2.jpg",
+        mom3: "ps5-mom3.jpg",
+        siteVisit: "ps5-site.jpg"
+      },
+
+      // 8. Problem Statement 06 Images
+      ps6: {
+        mom1: "ps6-mom1.jpg",
+        mom2: "ps6-mom2.jpg",
+        mom3: "ps6-mom3.jpg",
+        siteVisit: "ps6-site.jpg"
+      }
+    };
+
+    // Complete Structured Data for all 6 Problem Statements (including all sections from reference screenshots)
+    const initialData = [
+      {
+        id: 1,
+        code: "PROBLEM STATEMENT 01",
+        shortLabel: "PS 1 · Approvals & Layout",
+        accentColor: "emerald",
+        title: "Statutory Approvals, Site Layout, Labour Facilities and Concrete Supply Strategy",
+        subtitle: "8-acre shopping mall site in Hubballi — statutory clearances, 2-gate site circulation, 250-worker camp compliance, on-site batching plant vs. RMC cost analysis, and project schedule.",
+        tags: ["RERA & Statutory NOCs", "8-Acre Site Layout", "2-Gate Circulation", "CP-30 Batching Plant", "BOCW Labour Camp", "540-Day Schedule"],
+        problemBrief: "Your company has won the contract for a 7-block interconnected shopping mall with 3 stories of underground parking on an 8-acre site (~12,000 m³ preliminary concrete volume; mobilization within 1 week). Complete all paperwork for the local governing body and RERA; design compliant labour housing; evaluate an on-site concrete batching plant vs. commercial RMC; locate carpenter/fabricator yards, MEP utilities, Civil & Sales offices, 2 gates, Testing Lab, and Store; and determine total working days.",
+        customVisualHtml: `
+          <!-- 1. Statutory Approvals & Permissions Matrix -->
+          <div class="rounded-2xl bg-obsidian border border-borderDark p-5 mb-5">
+            <div class="text-xs font-mono uppercase text-emeraldAccent mb-3">1. Statutory Approvals, RERA & Consultant Coordination</div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-xs text-left border-collapse">
+                <thead>
+                  <tr class="border-b border-borderDark text-slate-400 font-mono">
+                    <th class="py-2">Clearance / Document</th>
+                    <th class="py-2">Governing Authority</th>
+                    <th class="py-2">Coordinating Consultant</th>
+                    <th class="py-2">Stage</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-borderDark/60 text-slate-300">
+                  <tr><td class="py-2 font-medium text-white">Building Plan Sanction & CC</td><td class="py-2">HDMC (Hubballi-Dharwad Municipal Corp.)</td><td class="py-2">Principal Architect</td><td class="py-2 font-mono text-emeraldAccent">Pre-Mobilization</td></tr>
+                  <tr><td class="py-2 font-medium text-white">RERA Project Registration</td><td class="py-2">Karnataka RERA Authority</td><td class="py-2">Legal + Architect + CA</td><td class="py-2 font-mono text-emeraldAccent">Before Sales Launch</td></tr>
+                  <tr><td class="py-2 font-medium text-white">Structural Stability & Soil Report</td><td class="py-2">HDMC Technical Cell</td><td class="py-2">Structural & Geotech Eng.</td><td class="py-2 font-mono text-emeraldAccent">Before Excavation</td></tr>
+                  <tr><td class="py-2 font-medium text-white">Provisional Fire & Emergency NOC</td><td class="py-2">Karnataka Fire & Emergency Services</td><td class="py-2">MEP & Fire Consultant</td><td class="py-2 font-mono text-amber-400">Pre-Construction</td></tr>
+                  <tr><td class="py-2 font-medium text-white">Consent to Establish (CTE) & STP</td><td class="py-2">KSPCB (Pollution Control Board)</td><td class="py-2">MEP & Environmental Eng.</td><td class="py-2 font-mono text-amber-400">Batching Plant / Site</td></tr>
+                  <tr><td class="py-2 font-medium text-white">Temporary HT Power & Borewell NOC</td><td class="py-2">HESCOM & Ground Water Authority</td><td class="py-2">Electrical / MEP Lead</td><td class="py-2 font-mono text-sky-400">Week 1 Mobilization</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- 2. Blockwise Area Distribution + Batching Plant vs RMC -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 mb-5">
+            <div class="lg:col-span-6 rounded-2xl bg-obsidian border border-borderDark p-5">
+              <div class="text-xs font-mono uppercase text-emeraldAccent mb-3">2. Blockwise Area Distribution (1,18,000 sq.ft / floor)</div>
+              <div class="space-y-2.5 text-xs font-mono">
+                ${[
+                  { b: 'Block 1', a: 16000, pct: 80 },
+                  { b: 'Block 2', a: 18000, pct: 90 },
+                  { b: 'Block 3', a: 16000, pct: 80 },
+                  { b: 'Block 4', a: 16000, pct: 80 },
+                  { b: 'Block 5', a: 14000, pct: 70 },
+                  { b: 'Block 6', a: 18000, pct: 90 },
+                  { b: 'Block 7', a: 20000, pct: 100 }
+                ].map(r => `
+                  <div>
+                    <div class="flex justify-between text-slate-300 mb-1"><span>${r.b}</span><span>${r.a.toLocaleString()} sq.ft</span></div>
+                    <div class="w-full h-2 rounded-full bg-surface overflow-hidden">
+                      <div class="h-full rounded-full bg-gradient-to-r from-emeraldAccent to-tealAccent" style="width:${r.pct}%"></div>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <div class="lg:col-span-6 rounded-2xl bg-obsidian border border-borderDark p-5 flex flex-col justify-between">
+              <div>
+                <div class="text-xs font-mono uppercase text-tealAccent mb-3">3. Concrete Supply Strategy (~12,000 m³)</div>
+                <table class="w-full text-xs text-left border-collapse">
+                  <thead>
+                    <tr class="border-b border-borderDark text-slate-400 font-mono">
+                      <th class="py-2">Parameter</th>
+                      <th class="py-2 text-emeraldAccent">On-Site CP-30 Plant</th>
+                      <th class="py-2">Commercial RMC</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-borderDark/60 text-slate-300">
+                    <tr><td class="py-2">Unit Cost / m³</td><td class="py-2 font-mono text-white">₹5,450 / m³</td><td class="py-2 font-mono">₹6,200 / m³</td></tr>
+                    <tr><td class="py-2">Plant Setup & Ops</td><td class="py-2 font-mono text-white">₹60.0 Lakhs</td><td class="py-2 font-mono">Included</td></tr>
+                    <tr><td class="py-2">Total (12,000 m³)</td><td class="py-2 font-mono font-bold text-emeraldAccent">₹7.14 Crore</td><td class="py-2 font-mono">₹7.44 Crore</td></tr>
+                    <tr><td class="py-2">Conveying System</td><td class="py-2 text-emeraldAccent">2 Boom Pumps + Pipeline</td><td class="py-2 text-amber-400">Transit Mixer Queue</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="mt-4 p-3 rounded-xl bg-emeraldAccent/10 border border-emeraldAccent/25 text-xs text-emeraldAccent">
+                <strong>Decision:</strong> Set up an on-site CP-30 batching plant near Gate 1—saving ~₹30 Lakhs, eliminating city-traffic slump loss, and feeding all 7 blocks via stationary + boom pumps.
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. 8-Acre Site Zoning, Utilities & Schedule Breakdown -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="rounded-2xl bg-obsidian border border-borderDark p-4">
+              <div class="text-[11px] font-mono uppercase text-sky-400 mb-2">Site Zoning & Gates</div>
+              <ul class="space-y-1.5 text-xs text-slate-300">
+                <li>• <strong>Gate 1 (North):</strong> Heavy material ingress, weighbridge, CP-30 plant, aggregate bins, testing lab & central store.</li>
+                <li>• <strong>Gate 2 (East):</strong> Civil site office, barricaded Sales Office, visitor parking & empty vehicle egress.</li>
+                <li>• <strong>Yards:</strong> Dedicated carpenter shuttering yard & bar-bending shed with gantry crane reach.</li>
+              </ul>
+            </div>
+            <div class="rounded-2xl bg-obsidian border border-borderDark p-4">
+              <div class="text-[11px] font-mono uppercase text-purple-400 mb-2">BOCW Labour Camp & Utilities</div>
+              <ul class="space-y-1.5 text-xs text-slate-300">
+                <li>• <strong>Capacity:</strong> 250 workers (triggers CLRA & BOCW Act mandatory welfare facilities).</li>
+                <li>• <strong>Water:</strong> 33,750 L/day (135 LPCD) domestic + 45,000 L/day curing/batching tank.</li>
+                <li>• <strong>Power & Welfare:</strong> 500 kVA transformer + 250 kVA DG backup, crèche, first-aid room, STP & 25 toilets.</li>
+              </ul>
+            </div>
+            <div class="rounded-2xl bg-obsidian border border-borderDark p-4">
+              <div class="text-[11px] font-mono uppercase text-amber-400 mb-2">Project Duration (540 Working Days)</div>
+              <ul class="space-y-1.5 text-xs text-slate-300">
+                <li>• <strong>Phase 1 (Days 1–150):</strong> Mobilization, secant piling/shoring & 3-level basement excavation.</li>
+                <li>• <strong>Phase 2 (Days 151–330):</strong> Raft foundation, basement slabs & podium transfer slab.</li>
+                <li>• <strong>Phase 3 (Days 331–540):</strong> 7-block superstructure, interconnected pathways & MEP handover.</li>
+              </ul>
+            </div>
+          </div>
+        `,
+        siteVisit: {
+          siteName: "Urban Commercial Mall & Podium Development, Hubballi",
+          date: "18 Oct 2026",
+          engineer: "Senior Project Manager & Planning Lead",
+          image: IMAGE_ASSETS.ps1.siteVisit,
+          notes: "Verified statutory clearance sequence (HDMC Plan Sanction, Karnataka RERA, KSPCB Consent to Establish, Fire & Emergency NOC) and observed physical barricading separating the Sales Office from heavy aggregate tipper routes."
+        },
+        solutions: [
+          { title: "Statutory & RERA Approvals", detail: "Coordinated Architect (sanction drawings), Structural Engineer (stability & soil report), and MEP Consultants (Fire, HVAC, HT power NOCs) for HDMC & RERA registration prior to excavation." },
+          { title: "2-Gate Site Circulation & Yards", detail: "Gate 1 dedicated to heavy material ingress adjacent to Batching Plant, Rebar Yard, Carpenter Shed, Testing Lab, and Store. Gate 2 assigned to staff, Sales Office visitors, and empty truck exit." },
+          { title: "BOCW Labour Camp & Utilities", detail: "Designed housing for 250 workers downwind with 135 LPCD water supply (33,750 L/day), dedicated 500 kVA construction transformer, first-aid room, crèche, and septic/STP units." },
+          { title: "Project Duration (540 Working Days)", detail: "Critical path scheduled across deep shoring & 3-basement excavation (150 days), substructure/podium RCC (180 days), and 7-block superstructure + MEP finishing (210 days)." }
+        ],
+        moms: [
+          {
+            title: "MoM 01 — Statutory Clearances & Blockwise Area Audit",
+            dateTime: "12 Oct 2026 · 10:30 AM – 11:45 AM",
+            venue: "School of Civil Engineering, KLE Tech Hubballi",
+            attendees: "Apurva Dyaberi & Team Members",
+            image: IMAGE_ASSETS.ps1.mom1,
+            fallbackImage: "https://placehold.co/800x450/0F1418/34D399?text=Place+ps1-mom1.jpg+in+same+folder",
+            points: [
+              "Computed total typical floor plate across 7 blocks (1,18,000 sq.ft/floor) plus 3 underground parking levels.",
+              "Compiled RERA, HDMC Building Plan, Fire NOC, and KSPCB approval checklist with consultant responsibilities.",
+              "Mapped Gate 1 and Gate 2 access points along the primary approach road on the 8-acre AutoCAD plan."
+            ],
+            actions: [
+              { task: "Finalize 8-acre AutoCAD site layout zoning", owner: "Apurva & Member 2", status: "Completed" },
+              { task: "Complete CP-30 batching plant break-even sheet", owner: "Member 3 & 4", status: "Completed" }
+            ]
+          }
+        ],
+        reflection: "Planning an 8-acre commercial project before excavation taught us that physical logistics—gate turning radii, batching plant pump reach, and BOCW labour camp compliance—govern site productivity just as much as structural design.",
+        conclusion: "A segregated 2-gate site layout paired with an on-site CP-30 batching plant, timely RERA/municipal approvals, and a 540-working-day CPM schedule establishes a resilient execution baseline."
+      },
+      {
+        id: 2,
+        code: "PROBLEM STATEMENT 02",
+        shortLabel: "PS 2 · Store, QC & Accounts",
+        accentColor: "lime",
+        title: "Integrated Material Procurement, Quality Control, Stores and Accounts System",
+        subtitle: "Self-sustaining gate-to-accounts workflow built in 15 days for a newly hired store manager with minimal Project Manager intervention.",
+        tags: ["4-Zone Store Layout", "Gate 1 / Gate 2 Flow", "3-Copy Invoice Loop", "QA/QC Lab Gatekeeping", "GRN & MRN Protocol"],
+        problemBrief: "Project execution starts in 15 days and a newly hired store manager lacks large-scale project experience. Design a self-sustaining procurement, QC, storage, and accounting system: prepare a 4-category store layout; assign ingress/departure gates; log all vehicle numbers; enforce a 3-copy invoice workflow (Security, Store, Accounts); and integrate QA/QC testing near the lab with immediate rejection exit.",
+        customVisualHtml: `
+          <!-- End-to-End Material Flow Schematic -->
+          <div class="rounded-2xl bg-obsidian border border-borderDark p-5 mb-5">
+            <div class="text-xs font-mono uppercase text-lime-400 mb-4">1. Autonomous Gate-to-Accounts Material Workflow</div>
+            <div class="grid grid-cols-1 sm:grid-cols-5 gap-3 text-xs">
+              <div class="p-3.5 rounded-xl bg-surface border border-borderDark">
+                <div class="font-mono text-[10px] text-lime-400">STEP 01 · GATE 1 INGRESS</div>
+                <div class="font-bold text-white mt-1">Security & ANPR Log</div>
+                <p class="text-slate-400 mt-1">Record truck number, time-in, weighbridge slip & stamp 3 invoice copies.</p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-surface border border-borderDark">
+                <div class="font-mono text-[10px] text-sky-400">STEP 02 · ADJACENT LAB</div>
+                <div class="font-bold text-white mt-1">QA/QC Sampling</div>
+                <p class="text-slate-400 mt-1">Test slump, silt, grading, or MTC before unloading into store bays.</p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-rose-950/30 border border-rose-500/30">
+                <div class="font-mono text-[10px] text-rose-400">IF REJECTED · MRN</div>
+                <div class="font-bold text-white mt-1">Immediate Exit (Gate 2)</div>
+                <p class="text-slate-400 mt-1">Issue Material Rejection Note; truck exits Gate 2 immediately with time-out log.</p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-emerald-950/30 border border-emerald-500/30">
+                <div class="font-mono text-[10px] text-emerald-400">IF ACCEPTED · GRN</div>
+                <div class="font-bold text-white mt-1">4-Zone Store Binning</div>
+                <p class="text-slate-400 mt-1">Unload into designated layout bay (FIFO); Store Manager signs GRN.</p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-surface border border-borderDark">
+                <div class="font-mono text-[10px] text-amber-400">STEP 05 · ACCOUNTS</div>
+                <div class="font-bold text-white mt-1">3-Way Invoice Match</div>
+                <p class="text-slate-400 mt-1">Copy 1: Security · Copy 2: Store · Copy 3 + GRN + QC Pass → Accounts.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4-Zone Store Layout + Vehicle & Document Control Matrix -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+            <div class="lg:col-span-6 rounded-2xl bg-obsidian border border-borderDark p-5">
+              <div class="text-xs font-mono uppercase text-emeraldAccent mb-3">2. 4-Category Store Layout Architecture</div>
+              <div class="grid grid-cols-2 gap-3 text-xs">
+                <div class="p-3 rounded-xl bg-surface border border-borderDark">
+                  <div class="font-mono text-[10px] text-emeraldAccent">ZONE A · CONSUMABLES</div>
+                  <div class="font-semibold text-white mt-0.5">Covered Damp-Proof Bay</div>
+                  <p class="text-slate-400 mt-1">Cement on 150 mm raised wooden pallets (FIFO lanes), chemical admixtures, binding wire, nails & welding rods.</p>
+                </div>
+                <div class="p-3 rounded-xl bg-surface border border-borderDark">
+                  <div class="font-mono text-[10px] text-sky-400">ZONE B · NON-CONSUMABLES</div>
+                  <div class="font-semibold text-white mt-0.5">Semi-Covered Rack Yard</div>
+                  <p class="text-slate-400 mt-1">Shuttering plywood, MS staging pipes, U-jacks, prop sleeves, scaffolding clamps & form-ties.</p>
+                </div>
+                <div class="p-3 rounded-xl bg-surface border border-borderDark">
+                  <div class="font-mono text-[10px] text-amber-400">ZONE C · EQUIPMENT</div>
+                  <div class="font-semibold text-white mt-0.5">Lockable Tool Crib</div>
+                  <p class="text-slate-400 mt-1">Needle vibrators, bar cutting/bending machines, Auto Levels, Hilti drills & calibration tags.</p>
+                </div>
+                <div class="p-3 rounded-xl bg-surface border border-borderDark">
+                  <div class="font-mono text-[10px] text-purple-400">ZONE D · SAFETY GEAR</div>
+                  <div class="font-semibold text-white mt-0.5">Front Issue Counter</div>
+                  <p class="text-slate-400 mt-1">IS-marked helmets, full-body harnesses, reflective jackets, gumboots, fire extinguishers & first-aid kits.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-6 rounded-2xl bg-obsidian border border-borderDark p-5">
+              <div class="text-xs font-mono uppercase text-amber-400 mb-3">3. 3-Copy Invoice & Gate Register Control</div>
+              <table class="w-full text-xs text-left border-collapse">
+                <thead>
+                  <tr class="border-b border-borderDark text-slate-400 font-mono">
+                    <th class="py-2">Document / Log</th>
+                    <th class="py-2">Custodian</th>
+                    <th class="py-2">Mandatory Trigger</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-borderDark/60 text-slate-300">
+                  <tr><td class="py-2 font-medium text-white">ANPR / Gate Register</td><td class="py-2">Gate 1 & 2 Security</td><td class="py-2">Plate photo, Driver ID, Time-In & Time-Out</td></tr>
+                  <tr><td class="py-2 font-medium text-white">Invoice Copy 1</td><td class="py-2">Main Gate Security</td><td class="py-2">Stamped at Gate 1 entry; matched at Gate 2 exit</td></tr>
+                  <tr><td class="py-2 font-medium text-white">Invoice Copy 2 + GRN</td><td class="py-2">Store Manager</td><td class="py-2">Filed in bin ledger after QA/QC pass stamp</td></tr>
+                  <tr><td class="py-2 font-medium text-white">Invoice Copy 3 + QC</td><td class="py-2">Accounts Section</td><td class="py-2">3-way match (PO + GRN + Invoice) for payment</td></tr>
+                  <tr><td class="py-2 font-medium text-rose-400">Rejection Memo (MRN)</td><td class="py-2">QA/QC + Security</td><td class="py-2">Immediate Gate 2 exit; zero payment liability</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `,
+        siteVisit: {
+          siteName: "Large-Scale Commercial Warehouse & Logistics Hub, Hubballi",
+          date: "24 Oct 2026",
+          engineer: "Central Store In-Charge & QA/QC Engineer",
+          image: IMAGE_ASSETS.ps2.siteVisit,
+          notes: "Observed FIFO cement stacking on 150 mm raised wooden pallets, color-coded bin cards, and strict separation between QA/QC approval authority and store inventory custody."
+        },
+        solutions: [
+          { title: "4-Category Visual Store Layout", detail: "Bay A: Consumables (cement, admixtures, binding wire); Bay B: Non-Consumables (shuttering plates, props, scaffolding); Bay C: Plant & Equipment (vibrators, cutters); Bay D: Safety Gear (helmets, harnesses, boots)." },
+          { title: "One-Way Gate & Vehicle Registry", detail: "Gate 1 (next to Store & Testing Lab) handles all material ingress; Gate 2 handles empty/rejected vehicle egress. Security captures vehicle plate photos and timestamps in a synced digital gate register." },
+          { title: "3-Copy Invoice & QA/QC Gatekeeping", detail: "Driver presents 3 invoice copies: Copy 1 retained by Security, Copy 2 by Store, Copy 3 sent to Accounts only after QA/QC lab clearance and signed GRN. Rejected consignments receive an MRN and depart Gate 2 immediately." }
+        ],
+        moms: [
+          {
+            title: "MoM 01 — Store Zoning & Mistake-Proof SOP Design",
+            dateTime: "21 Oct 2026 · 02:30 PM – 03:45 PM",
+            venue: "Project Discussion Room, KLE Tech",
+            attendees: "Apurva Dyaberi & Team Members",
+            image: IMAGE_ASSETS.ps2.mom1,
+            fallbackImage: "https://placehold.co/800x450/0F1418/A3E635?text=Place+ps2-mom1.jpg+in+same+folder",
+            points: [
+              "Mapped proximity between Gate 1, Weighbridge, Material Testing Lab, and Central Store to eliminate internal traffic crossings.",
+              "Created color-coded shelf signage and a 1-page visual SOP so the new store manager operates independently."
+            ],
+            actions: [
+              { task: "Draft GRN, MRN & Gate Log register templates", owner: "Apurva & Member 5", status: "Completed" }
+            ]
+          }
+        ],
+        reflection: "Designing a system for an inexperienced store manager highlighted the importance of 'poka-yoke' controls: making QA/QC sign-off a mandatory prerequisite for GRN issuance prevents defective materials from ever entering site stock.",
+        conclusion: "A visual 4-zone store layout, one-way gate tracking, and a 3-copy invoice + QA/QC clearance loop establish an auditable, self-sustaining material management system."
+      },
+      {
+        id: 3,
+        code: "PROBLEM STATEMENT 03",
+        shortLabel: "PS 3 · Surveying & TBM",
+        accentColor: "sky",
+        title: "Surveying, Setting-Out and Benchmark Management",
+        subtitle: "Minimizing outsourced Bengaluru Total Station consultant visits (₹10,000 + TA/DA per trip) while managing in-house level transfers across 7 blocks.",
+        tags: ["Total Station & Auto Level", "TBM Network", "Single-Visit Optimization", "Outsourcing Rationale", "Set-Out Handover"],
+        problemBrief: "Execution starts in 5 days. A Bengaluru-based surveying consultant with a Total Station is traveling to Hubballi to establish permanent benchmarks and RLs, charging ₹10,000 plus travel and stay expenses per visit. Mark benchmark locations across the site layout, optimize the plan to minimize repeat visits, and explain why surveying was outsourced despite having civil engineers on site.",
+        customVisualHtml: `
+          <!-- 1. TBM Schedule -->
+          <div class="rounded-2xl bg-obsidian border border-borderDark p-5 mb-5">
+            <div class="text-xs font-mono uppercase text-sky-400 mb-3">1. Site Temporary Benchmark (TBM) & Reference Pillar Network</div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-xs text-left border-collapse">
+                <thead>
+                  <tr class="border-b border-borderDark text-slate-400 font-mono">
+                    <th class="py-2">Pillar ID</th>
+                    <th class="py-2">Strategic Location on 8-Acre Plan</th>
+                    <th class="py-2">Protection Zone</th>
+                    <th class="py-2">Primary Function</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-borderDark/60 text-slate-300">
+                  <tr><td class="py-2 font-mono text-sky-400">TBM-01 (Master)</td><td class="py-2">North-East Compound Wall (Near Gate 1)</td><td class="py-2">Outside 3-basement influence</td><td class="py-2">Primary RL & Northing/Easting Origin</td></tr>
+                  <tr><td class="py-2 font-mono text-sky-400">TBM-02</td><td class="py-2">North-West Corner Pillar</td><td class="py-2">Concrete bollard guard</td><td class="py-2">Blocks 1 & 2 Grid & Excavation Control</td></tr>
+                  <tr><td class="py-2 font-mono text-sky-400">TBM-03</td><td class="py-2">Central Spine Corridor (Safe Island)</td><td class="py-2">Steel barricade cage</td><td class="py-2">Interconnected Pathway & Block 3/4/5 Check</td></tr>
+                  <tr><td class="py-2 font-mono text-sky-400">TBM-04 & 05</td><td class="py-2">South-East & South-West Perimeter</td><td class="py-2">Outside haul-road vibration</td><td class="py-2">Blocks 6 & 7 Setting-Out & Closed Traverse</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- 2. Division of Responsibility & Request-to-Approval Workflow -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+            <div class="lg:col-span-6 rounded-2xl bg-obsidian border border-borderDark p-5">
+              <div class="text-xs font-mono uppercase text-emeraldAccent mb-3">2. Outsourced vs. In-House Responsibility Split</div>
+              <div class="space-y-2.5 text-xs text-slate-300">
+                <div class="p-3 rounded-xl bg-surface border border-borderDark">
+                  <strong class="text-sky-400">Bengaluru Total Station Team (1 Consolidated Visit):</strong> Plot boundary verification, closed traverse, transferring Govt GTS RL to 6 perimeter TBMs, and primary grid corner pegs for all 7 blocks.
+                </div>
+                <div class="p-3 rounded-xl bg-surface border border-borderDark">
+                  <strong class="text-emeraldAccent">In-House Civil Engineers (Daily Execution):</strong> Excavation depth checks, PCC top-level transfers using Auto Level, footing/column center-line stringing from offset reference pillars, and weekly TBM closure checks.
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-6 rounded-2xl bg-obsidian border border-borderDark p-5">
+              <div class="text-xs font-mono uppercase text-amber-400 mb-3">3. Survey Risks & Mitigation Controls</div>
+              <table class="w-full text-xs text-left border-collapse">
+                <thead>
+                  <tr class="border-b border-borderDark text-slate-400 font-mono">
+                    <th class="py-2">Site Risk</th>
+                    <th class="py-2">Preventive Engineering Control</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-borderDark/60 text-slate-300">
+                  <tr><td class="py-2 text-rose-400">Peg Disturbed by Excavators</td><td class="py-2">Offset reference pillars 3m outside excavation line</td></tr>
+                  <tr><td class="py-2 text-rose-400">Repeat Consultant Call-Out</td><td class="py-2">Pre-cast TBM pedestals 72 hrs prior; bundle all 7 blocks</td></tr>
+                  <tr><td class="py-2 text-rose-400">Auto Level Collimation Drift</td><td class="py-2">Mandatory two-peg test every Monday morning</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `,
+        siteVisit: {
+          siteName: "Institutional & Commercial Complex Setting-Out Site, Hubballi",
+          date: "30 Oct 2026",
+          engineer: "Licensed Land Surveyor & Senior Site Engineer",
+          image: IMAGE_ASSETS.ps3.siteVisit,
+          notes: "Observed concrete pedestal casting for TBMs with brass bolts, closed-traverse verification, and daily Auto Level fly-leveling logs maintained by site engineers."
+        },
+        solutions: [
+          { title: "Before the Surveyor Arrives (5-Day Prep)", detail: "Clear sightlines across the 8-acre plot, cast 6 reinforced concrete TBM pedestals with brass top plates 3 days ahead so concrete sets, and finalize AutoCAD coordinate tables for all 7 block corners." },
+          { title: "Zero-Repeat-Visit Bundling", detail: "Consolidate plot boundary verification, setback checks, all 7 block primary grid lines, and TBM RL transfers into a single 2-day Bengaluru consultant visit—saving ₹10,000 + TA/DA per avoided trip." },
+          { title: "Why Outsource Surveying?", detail: "(1) High purchase & annual calibration cost of 1-second Total Stations/DGPS; (2) Third-party legal certification for municipal setback compliance; (3) Specialized speed to eliminate cumulative angular errors across 7 interconnected blocks." }
+        ],
+        moms: [
+          {
+            title: "MoM 01 — TBM Placement & Consultant Scope Consolidation",
+            dateTime: "27 Oct 2026 · 11:00 AM – 12:15 PM",
+            venue: "Surveying & Geomatics Lab, KLE Tech",
+            attendees: "Apurva Dyaberi & Team Members",
+            image: IMAGE_ASSETS.ps3.mom1,
+            fallbackImage: "https://placehold.co/800x450/0F1418/38BDF8?text=Place+ps3-mom1.jpg+in+same+folder",
+            points: [
+              "Placed all TBMs outside the 3-level basement excavation zone to prevent settlement or excavator damage.",
+              "Drafted joint handover protocol so in-house engineers execute daily footing/column leveling with an Auto Level."
+            ],
+            actions: [
+              { task: "Mark 6 perimeter TBM coordinates on site plan", owner: "Apurva & Member 2", status: "Completed" }
+            ]
+          }
+        ],
+        reflection: "A 10 mm angular error during initial grid setting-out compounds across 7 interconnected blocks. Preparing protected TBMs before the specialist arrives ensures maximum value from a single consultant mobilization.",
+        conclusion: "Pre-casting protected perimeter TBMs and bundling all primary grid transfers into one visit eliminates repeat consultant expenses while empowering in-house engineers for daily level control."
+      },
+      {
+        id: 4,
+        code: "PROBLEM STATEMENT 04",
+        shortLabel: "PS 4 · Steel & Formwork",
+        accentColor: "orange",
+        title: "Steel and Formwork Wastage Control",
+        subtitle: "Using the 30-day excavation window to cut reinforcement wastage from 12% to 5% and plywood formwork wastage from 9% to 5% (10+ reuses).",
+        tags: ["BBS Optimization (12% → 5%)", "12m Bar Cutting Matrix", "Off-Cut Recovery", "Modular Grouping", "10+ Formwork Cycles"],
+        problemBrief: "Historical company data shows 12% steel wastage and 9% plywood formwork wastage. During the next 30 days of excavation, develop control systems over BBS calculation, block-wise steel ordering, storage/issuing, and reconciliation to bring steel wastage down to 5%, plus group columns/beams and establish a procedure to reuse formwork at least 10 times (reducing wastage by 4%).",
+        customVisualHtml: `
+          <!-- Steel & Formwork Reduction Comparison -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+            <div class="rounded-2xl bg-obsidian border border-borderDark p-5">
+              <div class="text-xs font-mono uppercase text-orange-400 mb-3">1. 12m Standard Rebar Cutting Combinations</div>
+              <div class="space-y-2 text-xs text-slate-300 font-mono">
+                <div class="p-2.5 rounded-lg bg-surface flex justify-between"><span>Combo A: 4.8m + 4.8m + 2.4m</span><span class="text-emeraldAccent">0.0% Scrap</span></div>
+                <div class="p-2.5 rounded-lg bg-surface flex justify-between"><span>Combo B: 6.2m + 3.8m + 2.0m (links)</span><span class="text-emeraldAccent">0.0% Scrap</span></div>
+                <div class="p-2.5 rounded-lg bg-surface flex justify-between"><span>Combo C: 7.5m + 4.2m + 0.3m (chairs)</span><span class="text-emeraldAccent">&lt;2.5% Scrap</span></div>
+              </div>
+              <p class="text-xs text-slate-400 mt-3">Off-cuts &gt;0.5 m are tagged in diameter-wise bins for stirrups, spacer bars, and cover chairs.</p>
+            </div>
+            <div class="rounded-2xl bg-obsidian border border-borderDark p-5">
+              <div class="text-xs font-mono uppercase text-tealAccent mb-3">2. Standardized Column & Beam Families</div>
+              <div class="space-y-2 text-xs text-slate-300">
+                <div class="p-2.5 rounded-lg bg-surface flex justify-between"><span>Group C1 (Core Columns)</span><span class="font-mono text-white">600 × 600 mm</span></div>
+                <div class="p-2.5 rounded-lg bg-surface flex justify-between"><span>Group C2 (Grid Columns)</span><span class="font-mono text-white">450 × 600 mm</span></div>
+                <div class="p-2.5 rounded-lg bg-surface flex justify-between"><span>Group B1 / B2 (Primary/Sec Beams)</span><span class="font-mono text-white">300×600 / 230×450 mm</span></div>
+              </div>
+              <p class="text-xs text-slate-400 mt-3">Uniform cross-sections across 7 blocks allow prefabricated panels to repeat 10–12 cycles without ripping plywood.</p>
+            </div>
+          </div>
+
+          <!-- 3. Monitoring & Weekly Reconciliation KPI Strip -->
+          <div class="rounded-2xl bg-obsidian border border-borderDark p-5">
+            <div class="text-xs font-mono uppercase text-emeraldAccent mb-3">3. Weekly Wastage Monitoring & Formwork Reuse Gates</div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+              <div class="p-3 rounded-xl bg-surface border border-borderDark">
+                <div class="text-[10px] font-mono text-slate-400">STEEL RECONCILIATION</div>
+                <div class="font-bold text-white mt-1">Theoretical vs. Issue</div>
+                <p class="text-slate-400 mt-1">Variance &gt;5% triggers immediate scrap-bin & BBS audit before next release.</p>
+              </div>
+              <div class="p-3 rounded-xl bg-surface border border-borderDark">
+                <div class="text-[10px] font-mono text-slate-400">PANEL STAMPING</div>
+                <div class="font-bold text-white mt-1">Cycle Tally Marks</div>
+                <p class="text-slate-400 mt-1">Each shutter board stenciled with ID & cycle count (1 to 10+).</p>
+              </div>
+              <div class="p-3 rounded-xl bg-surface border border-borderDark">
+                <div class="text-[10px] font-mono text-slate-400">STRIPPING RULE</div>
+                <div class="font-bold text-white mt-1">Zero Crowbar Hammering</div>
+                <p class="text-slate-400 mt-1">Mandatory release agent + flat pry bars prevent edge delamination.</p>
+              </div>
+              <div class="p-3 rounded-xl bg-surface border border-borderDark">
+                <div class="text-[10px] font-mono text-slate-400">SAVINGS IMPACT</div>
+                <div class="font-bold text-emeraldAccent mt-1">~84 MT Steel Saved</div>
+                <p class="text-slate-400 mt-1">7% steel waste reduction across ~1,200 MT project reinforcement.</p>
+              </div>
+            </div>
+          </div>
+        `,
+        siteVisit: {
+          siteName: "High-Rise Commercial Podium & Bar Bending Yard, Hubballi",
+          date: "07 Nov 2026",
+          engineer: "BBS & Billing Engineer",
+          image: IMAGE_ASSETS.ps4.siteVisit,
+          notes: "Inspected raised dunnage steel racks, color-coded off-cut bins, and film-faced shuttering plywood edge-sealing practices."
+        },
+        solutions: [
+          { title: "BBS & Block-Wise Steel Ordering", detail: "Generate block-wise Bar Bending Schedules 15 days before pour; procure custom-rolled bar lengths for high-tonnage diameters; store bars diameter-wise on raised timber sleepers above ground moisture." },
+          { title: "BBS Issue Slips & Weekly Reconciliation", detail: "Fabricators draw steel strictly via approved BBS slips; off-cuts are returned to tagged bins for stirrups/chairs; weekly reconciliation compares theoretical BBS weight vs. physical stock." },
+          { title: "10+ Cycle Formwork Reuse SOP", detail: "Standardize column/beam dimensions across blocks; use 18 mm high-density film-faced plywood with acrylic edge sealant; mandate pry-bar stripping (zero hammering), immediate scraping, mould-release oiling, and flat stacking to achieve 10–12 cycles." }
+        ],
+        moms: [
+          {
+            title: "MoM 01 — Scrap Root-Cause & Modular Shuttering Matrix",
+            dateTime: "04 Nov 2026 · 03:00 PM – 04:15 PM",
+            venue: "Structures & Concrete Lab, KLE Tech",
+            attendees: "Apurva Dyaberi & Team Members",
+            image: IMAGE_ASSETS.ps4.mom1,
+            fallbackImage: "https://placehold.co/800x450/0F1418/FB923C?text=Place+ps4-mom1.jpg+in+same+folder",
+            points: [
+              "Calculated that cutting steel waste from 12% to 5% on ~1,200 MT saves ~84 MT of reinforcement.",
+              "Established a 5-step de-shuttering, cleaning, oiling, and inspection checklist to guarantee 10+ repetitions."
+            ],
+            actions: [
+              { task: "Build steel reconciliation & plywood cycle tracker", owner: "Apurva & Member 3", status: "Completed" }
+            ]
+          }
+        ],
+        reflection: "Wastage on site rarely happens in one dramatic event—it accumulates through uncoordinated bar cuts and careless crowbar stripping. Simple visual bins and standardized member dimensions protect profit margins.",
+        conclusion: "Centralized BBS cutting optimization, strict off-cut recovery, and standardized modular formwork panels with disciplined stripping care achieve the 5% wastage targets."
+      },
+      {
+        id: 5,
+        code: "PROBLEM STATEMENT 05",
+        shortLabel: "PS 5 · Labour Planning",
+        accentColor: "purple",
+        title: "Stage-Wise Labour Planning and Workforce Management",
+        subtitle: "Determining optimum skilled and unskilled gangs from quantity take-offs, smoothing peak-to-slack demand, and structuring a compliant labour contract.",
+        tags: ["Skilled & Concrete Gangs", "Resource Leveling", "Karnataka Minimum Wages", "CLRA / EPF / ESIC", "Labour Contract SLA"],
+        problemBrief: "Based on concrete quantity take-offs across the 7 blocks, determine required skilled labour (fabricators, carpenters, masons) and unskilled labour (concrete gang). Balance peak vs. slack demand so neither under-hiring nor idle attrition occurs, benchmark prevailing and government minimum wages, and specify all legal and technical clauses for the labour supplier contract.",
+        customVisualHtml: `
+          <!-- Stage-Wise Workforce Demand & Wage Benchmark -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 mb-5">
+            <div class="lg:col-span-7 rounded-2xl bg-obsidian border border-borderDark p-5">
+              <div class="text-xs font-mono uppercase text-purple-400 mb-3">1. Stage-Wise Levelled Workforce Deployment</div>
+              <div class="space-y-3 text-xs font-mono">
+                ${[
+                  { stage: 'Stage 1: Excavation & Shoring', sk: 25, un: 45, w: 40 },
+                  { stage: 'Stage 2: 3-Level Basement RCC', sk: 70, un: 95, w: 82 },
+                  { stage: 'Stage 3: Superstructure (Peak)', sk: 85, un: 110, w: 100 },
+                  { stage: 'Stage 4: Masonry & Plastering', sk: 65, un: 75, w: 72 },
+                  { stage: 'Stage 5: MEP & Mall Finishing', sk: 50, un: 40, w: 48 }
+                ].map(s => `
+                  <div>
+                    <div class="flex justify-between text-slate-300 mb-1"><span>${s.stage}</span><span>${s.sk} Skilled + ${s.un} Unskilled</span></div>
+                    <div class="w-full h-2.5 rounded-full bg-surface overflow-hidden flex">
+                      <div class="h-full bg-purple-400" style="width:${s.w * 0.45}%"></div>
+                      <div class="h-full bg-emeraldAccent" style="width:${s.w * 0.55}%"></div>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+            <div class="lg:col-span-5 rounded-2xl bg-obsidian border border-borderDark p-5">
+              <div class="text-xs font-mono uppercase text-emeraldAccent mb-3">2. Wage Benchmark (Hubballi / Karnataka)</div>
+              <table class="w-full text-xs text-left border-collapse">
+                <thead>
+                  <tr class="border-b border-borderDark text-slate-400 font-mono">
+                    <th class="py-2">Trade</th>
+                    <th class="py-2">Govt Min.</th>
+                    <th class="py-2">Prevailing</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-borderDark/60 text-slate-300 font-mono">
+                  <tr><td class="py-2 font-sans">Bar Bender / Carpenter</td><td class="py-2">₹720/day</td><td class="py-2 text-emeraldAccent">₹900–1,050</td></tr>
+                  <tr><td class="py-2 font-sans">Mason (Skilled)</td><td class="py-2">₹720/day</td><td class="py-2 text-emeraldAccent">₹850–1,000</td></tr>
+                  <tr><td class="py-2 font-sans">Semi-Skilled Helper</td><td class="py-2">₹640/day</td><td class="py-2 text-emeraldAccent">₹680–750</td></tr>
+                  <tr><td class="py-2 font-sans">Unskilled Concrete Gang</td><td class="py-2">₹580/day</td><td class="py-2 text-emeraldAccent">₹600–650</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- 3. Welfare & Statutory Compliance + Indicators/Risks -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div class="rounded-2xl bg-obsidian border border-borderDark p-5">
+              <div class="text-xs font-mono uppercase text-sky-400 mb-3">3. Statutory Welfare & Contract Clauses (CLRA / BOCW)</div>
+              <div class="grid grid-cols-2 gap-2.5 text-xs text-slate-300">
+                <div class="p-2.5 rounded-lg bg-surface border border-borderDark"><strong class="text-white">CLRA Form-V:</strong> Mandatory labour contractor license for &gt;20 workers.</div>
+                <div class="p-2.5 rounded-lg bg-surface border border-borderDark"><strong class="text-white">EPF & ESIC:</strong> Monthly challan verification before releasing RA bills.</div>
+                <div class="p-2.5 rounded-lg bg-surface border border-borderDark"><strong class="text-white">WC Insurance:</strong> Workmen's Compensation policy covering all trades.</div>
+                <div class="p-2.5 rounded-lg bg-surface border border-borderDark"><strong class="text-white">Retention & Rework:</strong> 5% retention + back-charge for honeycombing/rework.</div>
+              </div>
+            </div>
+            <div class="rounded-2xl bg-obsidian border border-borderDark p-5">
+              <div class="text-xs font-mono uppercase text-amber-400 mb-3">4. Productivity Indicators & Attrition Risks</div>
+              <ul class="space-y-1.5 text-xs text-slate-300">
+                <li>• <strong>Productivity Norms:</strong> 110 kg/day rebar tying per fitter; 4.0 m²/day shuttering per carpenter; 1.25 m³/day brickwork per mason.</li>
+                <li>• <strong>Early Warning KPIs:</strong> Daily biometric muster variance &gt;8%, idle concrete gang hours, or delayed 7th-of-month wage payout.</li>
+                <li>• <strong>Buffer Pool:</strong> Maintain 10% multi-skilled floater gang to absorb festival absenteeism without halting pours.</li>
+              </ul>
+            </div>
+          </div>
+        `,
+        siteVisit: {
+          siteName: "Multi-Block Commercial Development Site, Hubballi",
+          date: "14 Nov 2026",
+          engineer: "Planning Engineer & Site HR Compliance Officer",
+          image: IMAGE_ASSETS.ps5.siteVisit,
+          notes: "Reviewed daily biometric muster rolls, gang productivity benchmarks (110 kg/day rebar per fitter; 4 m²/day shuttering per carpenter), and piece-rate subcontract agreements."
+        },
+        solutions: [
+          { title: "Quantity-Based Gang Estimation", detail: "Derived peak requirement of 85 skilled tradesmen (35 carpenters, 30 bar benders, 20 masons) and 110 unskilled helpers based on 12,000 m³ RCC take-off and daily cycle targets." },
+          { title: "Staggered Block Resource Leveling", detail: "Staggered concrete pours across Blocks 1 to 7 by 7–10 day intervals so shuttering and rebar gangs rotate continuously without idle slack or sudden hiring spikes." },
+          { title: "Technical & Legal Labour Contract", detail: "Technical: output norms, rework cost deduction, mandatory PPE, 5% retention. Legal: CLRA Form-V license, EPF & ESIC registration, Workmen's Compensation policy, zero child labour, and 7th-of-month wage payout." }
+        ],
+        moms: [
+          {
+            title: "MoM 01 — Productivity Constants & Contract Compliance",
+            dateTime: "11 Nov 2026 · 10:30 AM – 11:45 AM",
+            venue: "Construction Management Studio, KLE Tech",
+            attendees: "Apurva Dyaberi & Team Members",
+            image: IMAGE_ASSETS.ps5.mom1,
+            fallbackImage: "https://placehold.co/800x450/0F1418/A78BFA?text=Place+ps5-mom1.jpg+in+same+folder",
+            points: [
+              "Smoothed peak workforce fluctuations by staggering block slab cycles across the 7 blocks.",
+              "Compiled Karnataka minimum wage slabs and mandatory statutory clauses for the labour contractor agreement."
+            ],
+            actions: [
+              { task: "Finalize stage-wise manpower histogram", owner: "Apurva & Member 4", status: "Completed" }
+            ]
+          }
+        ],
+        reflection: "Hiring too many workers creates idle time and attrition, while under-hiring stalls critical-path pours. Staggering block schedules turns fluctuating demand into a steady, predictable workforce curve.",
+        conclusion: "Resource-leveled gang deployment backed by market-benchmarked wages and a CLRA/EPF-compliant labour contract ensures uninterrupted site execution."
+      },
+      {
+        id: 6,
+        code: "PROBLEM STATEMENT 06",
+        shortLabel: "PS 6 · Cube Failure QA",
+        accentColor: "amber",
+        title: "Concrete Cube Failure Investigation, Quality Assurance and Responsibility",
+        subtitle: "Forensic investigation into why 106/106 footings passed 28-day strength while 23/56 columns failed—plus zero-failure site and RMC protocols.",
+        tags: ["106/106 Footings Pass", "23/56 Columns Fail", "UPV & Core Testing", "Slump & Water Ban", "RMC Tank Sealing"],
+        problemBrief: "RCC work has reached ground floor level in 3 blocks using local RMC. Third-party 28-day compressive strength tests show 106/106 footings passed, while 23/56 columns failed. The RMC owner is contractually liable to demolish and rebuild failed members, yet claims a site concreting mistake occurred. Brainstorm all root causes, develop a site plan to ensure zero concrete cube failures hereafter, and define precautions for the RMC owner.",
+        customVisualHtml: `
+          <!-- 1. Traceability Banner -->
+          <div class="rounded-2xl bg-obsidian border border-borderDark p-4 mb-5 flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
+            <span class="text-amber-400 font-semibold">TRACEABILITY CHAIN:</span>
+            <span class="text-slate-300">Batching Ticket # → Transit Mixer Plate → Slump Log → Column Grid ID → Cube Mould Barcode → 7d / 28d Lab Report</span>
+          </div>
+
+          <!-- 2. Footings vs Columns Forensics & Responsibility Matrix -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 mb-5">
+            <div class="lg:col-span-6 rounded-2xl bg-obsidian border border-borderDark p-5">
+              <div class="text-xs font-mono uppercase text-amber-400 mb-3">Why Footings Passed (100%) vs. Columns Failed (41%)</div>
+              <div class="space-y-2.5 text-xs text-slate-300">
+                <div class="p-3 rounded-xl bg-surface border border-borderDark">
+                  <strong class="text-white">1. Slump Loss & On-Site Water Addition:</strong> Mass footings discharge rapidly, whereas congested columns pour slowly—causing transit mixer hold times and unauthorized water addition that spikes the w/c ratio.
+                </div>
+                <div class="p-3 rounded-xl bg-surface border border-borderDark">
+                  <strong class="text-white">2. Higher Concrete Grade & Batching Mix-Up:</strong> Columns typically require M35/M40 vs. M25 for footings; lower-grade mix dispatch or inadequate superplasticizer dosing directly drops 28-day strength.
+                </div>
+                <div class="p-3 rounded-xl bg-surface border border-borderDark">
+                  <strong class="text-white">3. Cube Sampling & Curing Lapses:</strong> Cubes cast from tail-end concrete, poorly tamped, or left uncured over weekends yield false-low cube results.
+                </div>
+              </div>
+            </div>
+            <div class="lg:col-span-6 rounded-2xl bg-obsidian border border-borderDark p-5">
+              <div class="text-xs font-mono uppercase text-emeraldAccent mb-3">Action & Responsibility Matrix</div>
+              <table class="w-full text-xs text-left border-collapse">
+                <thead>
+                  <tr class="border-b border-borderDark text-slate-400 font-mono">
+                    <th class="py-2">Stage</th>
+                    <th class="py-2">Responsible Party</th>
+                    <th class="py-2">Mandatory Control</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-borderDark/60 text-slate-300">
+                  <tr><td class="py-2">Batching & Dispatch</td><td class="py-2 text-amber-400">RMC Owner</td><td class="py-2">Seal mixer water tank + computerized batch slip</td></tr>
+                  <tr><td class="py-2">Arrival & Pouring</td><td class="py-2 text-emeraldAccent">Site QA/QC</td><td class="py-2">Slump check; zero water addition; PC-admixture only</td></tr>
+                  <tr><td class="py-2">Cube Casting/Curing</td><td class="py-2 text-sky-400">Joint (Site + RMC)</td><td class="py-2">Joint signature on moulds + locked curing tank</td></tr>
+                  <tr><td class="py-2">23 Failed Columns</td><td class="py-2 text-rose-400">Structural + Lab</td><td class="py-2">IS 456 UPV + Core Test before demolition/jacketing</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- 3. 6-Step Investigation & Escalation Sequence -->
+          <div class="rounded-2xl bg-obsidian border border-borderDark p-5">
+            <div class="text-xs font-mono uppercase text-sky-400 mb-3">6-Step Structural Investigation & Escalation Sequence (IS 456 Cl. 17)</div>
+            <div class="grid grid-cols-2 sm:grid-cols-6 gap-2.5 text-xs">
+              <div class="p-3 rounded-xl bg-surface border border-borderDark"><div class="font-mono text-[10px] text-sky-400">01 · HALT</div><div class="font-semibold text-white mt-0.5">Freeze Pouring</div><p class="text-slate-400 mt-1">Stop upper-floor loading on the 23 affected columns.</p></div>
+              <div class="p-3 rounded-xl bg-surface border border-borderDark"><div class="font-mono text-[10px] text-sky-400">02 · AUDIT</div><div class="font-semibold text-white mt-0.5">Batch & Slump Logs</div><p class="text-slate-400 mt-1">Cross-check RMC batching printouts & mixer arrival times.</p></div>
+              <div class="p-3 rounded-xl bg-surface border border-borderDark"><div class="font-mono text-[10px] text-sky-400">03 · NDT</div><div class="font-semibold text-white mt-0.5">Rebound & UPV</div><p class="text-slate-400 mt-1">Map in-situ homogeneity across all 23 columns.</p></div>
+              <div class="p-3 rounded-xl bg-surface border border-borderDark"><div class="font-mono text-[10px] text-sky-400">04 · CORES</div><div class="font-semibold text-white mt-0.5">Drilled Core Test</div><p class="text-slate-400 mt-1">Extract cores; verify ≥85% characteristic strength.</p></div>
+              <div class="p-3 rounded-xl bg-surface border border-borderDark"><div class="font-mono text-[10px] text-sky-400">05 · DESIGN</div><div class="font-semibold text-white mt-0.5">Structural Review</div><p class="text-slate-400 mt-1">Approve RCC/FRP jacketing or order demolition.</p></div>
+              <div class="p-3 rounded-xl bg-surface border border-borderDark"><div class="font-mono text-[10px] text-sky-400">06 · CLAIM</div><div class="font-semibold text-white mt-0.5">RMC Cost Recovery</div><p class="text-slate-400 mt-1">Enforce contract clause for rebuild/strengthening cost.</p></div>
+            </div>
+          </div>
+        `,
+        siteVisit: {
+          siteName: "NABL Accredited Concrete Testing Lab & High-Rise Site, Hubballi",
+          date: "20 Nov 2026",
+          engineer: "Senior Materials Testing Engineer",
+          image: IMAGE_ASSETS.ps6.siteVisit,
+          notes: "Observed compression testing machine fracture modes, Ultrasonic Pulse Velocity (UPV) calibration, and core-extraction protocols per IS 456:2000 & IS 516."
+        },
+        solutions: [
+          { title: "Immediate Verification for 23 Columns", detail: "Conduct Ultrasonic Pulse Velocity (UPV) and extract drilled cores from the 23 columns per IS 456 Cl. 17.4 before demolition; if core strength ≥ 85% fck, retain/jacket per Structural Engineer; otherwise RMC bears demolition & rebuild." },
+          { title: "Zero-Failure Site QA/QC Protocol", detail: "Mandatory slump test on every transit mixer; strict ban on adding water on-site (dose superplasticizer via QC only); tamper-evident cube tags; locked site curing tank; mandatory 7-day cube testing as an early warning." },
+          { title: "Precautions for the RMC Owner", detail: "Seal transit mixer water tanks before plant exit; provide automated batching printouts with timestamp & w/c ratio; require joint RMC-Site signatures on cube logs; cap transit retention time at 90 minutes." }
+        ],
+        moms: [
+          {
+            title: "MoM 01 — Concrete Cube Failure Forensics & Dual-Lock SOP",
+            dateTime: "18 Nov 2026 · 03:30 PM – 04:45 PM",
+            venue: "Concrete Technology Lab, KLE Tech",
+            attendees: "Apurva Dyaberi & Team Members",
+            image: IMAGE_ASSETS.ps6.mom1,
+            fallbackImage: "https://placehold.co/800x450/0F1418/FBBF24?text=Place+ps6-mom1.jpg+in+same+folder",
+            points: [
+              "Isolated slow column pouring + on-site water addition as the primary divergence between 100% passing footings and 41% failing columns.",
+              "Drafted joint RMC-Site cube witnessing protocol and sealed mixer water tank clause."
+            ],
+            actions: [
+              { task: "Compile IS 456 core-testing & zero-failure checklist", owner: "Apurva & Team", status: "Completed" }
+            ]
+          }
+        ],
+        reflection: "The sharp contrast between passing footings and failing columns proves that concrete quality is won or lost in the final 30 minutes at the pour point. Contractual liability protects finances, but preventive QA prevents schedule devastation.",
+        conclusion: "Enforcing sealed RMC water tanks, zero on-site water addition, locked cube curing tanks, and 7-day early-warning tests permanently eliminates preventable compressive strength failures."
+      }
+    ];
+
+    // App State
+    let state = JSON.parse(localStorage.getItem('apurva_csm_portfolio_v2')) || initialData;
+    let activePSId = 1;
+    let showAll = false;
+
+    function saveState(notify = true) {
+      localStorage.setItem('apurva_csm_portfolio_v2', JSON.stringify(state));
+      if (notify) showToast("Saved locally in browser");
+    }
+
+    function showToast(msg) {
+      const el = document.getElementById('toast');
+      document.getElementById('toast-msg').textContent = msg;
+      el.classList.remove('translate-y-24', 'opacity-0');
+      clearTimeout(window._t);
+      window._t = setTimeout(() => el.classList.add('translate-y-24', 'opacity-0'), 2400);
+    }
+
+    // Render Bento Grid Cards
+    function renderBentoGrid() {
+      const grid = document.getElementById('bento-grid');
+      const badgeColors = {
+        emerald: 'text-emeraldAccent bg-emeraldAccent/10 border-emeraldAccent/30',
+        lime: 'text-lime-400 bg-lime-400/10 border-lime-400/30',
+        sky: 'text-sky-400 bg-sky-400/10 border-sky-400/30',
+        orange: 'text-orange-400 bg-orange-400/10 border-orange-400/30',
+        purple: 'text-purple-400 bg-purple-400/10 border-purple-400/30',
+        amber: 'text-amber-400 bg-amber-400/10 border-amber-400/30',
+      };
+      const dotColors = {
+        emerald: 'bg-emeraldAccent text-obsidian',
+        lime: 'bg-lime-400 text-obsidian',
+        sky: 'bg-sky-400 text-obsidian',
+        orange: 'bg-orange-400 text-obsidian',
+        purple: 'bg-purple-400 text-obsidian',
+        amber: 'bg-amber-400 text-obsidian',
+      };
+
+      grid.innerHTML = state.map((ps, idx) => `
+        <a href="#case-study-workspace" onclick="selectPS(${ps.id})" class="group relative rounded-3xl border border-borderDark hover:border-slate-600 p-6 sm:p-7 card-glow-${ps.id} transition-all duration-300 flex flex-col justify-between overflow-hidden">
+          <span class="pointer-events-none select-none absolute -bottom-6 right-4 text-[7rem] font-extrabold leading-none text-white/[0.03] group-hover:text-white/[0.06] transition">${ps.id}</span>
+          <div>
+            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full border text-[10px] font-mono uppercase tracking-wider ${badgeColors[ps.accentColor]}">
+              <span>•</span>
+              <span>${ps.code}</span>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-white mt-4 group-hover:text-emeraldAccent transition leading-snug">
+              ${ps.title}
+            </h3>
+            <p class="text-xs text-slate-400 mt-2.5 leading-relaxed">
+              ${ps.subtitle}
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-borderDark/70 flex items-center gap-2.5 text-xs font-medium text-slate-300 group-hover:text-white">
+            <span>Open problem statement</span>
+            <span class="w-5 h-5 rounded-full ${dotColors[ps.accentColor]} flex items-center justify-center text-[11px] font-bold transform group-hover:translate-x-1 transition">→</span>
+          </div>
+        </a>
+      `).join('');
+    }
+
+    // Render Switcher Pills
+    function renderSwitcherPills() {
+      const container = document.getElementById('ps-switcher-pills');
+      container.innerHTML = state.map(ps => {
+        const active = !showAll && ps.id === activePSId;
+        return `
+          <button onclick="selectPS(${ps.id})" class="px-3 py-1.5 rounded-full text-xs font-mono transition ${
+            active ? 'bg-emeraldAccent text-obsidian font-bold' : 'bg-obsidian text-slate-400 hover:text-white border border-borderDark'
+          }">
+            ${ps.shortLabel}
+          </button>
+        `;
+      }).join('');
+
+      const btn = document.getElementById('show-all-btn');
+      btn.textContent = showAll ? "Single PS View" : "Expand All 6 PS";
+    }
+
+    // Render Detailed Case Study Article
+    function renderCaseStudies() {
+      const container = document.getElementById('case-study-container');
+      const items = showAll ? state : state.filter(p => p.id === activePSId);
+
+      container.innerHTML = items.map((ps, index) => `
+        <article class="rounded-3xl border border-borderDark bg-surface overflow-hidden ${index > 0 ? 'page-break' : ''}">
+          <!-- Case Study Hero Header -->
+          <div class="p-6 sm:p-10 border-b border-borderDark bg-gradient-to-br from-surface via-obsidian to-[#0D1A18]">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="px-3 py-1 rounded-full bg-emeraldAccent/15 border border-emeraldAccent/30 text-emeraldAccent text-[11px] font-mono font-semibold">
+                ${ps.code} · CONSTRUCTION WORKSHOP
+              </span>
+              <span class="text-xs font-mono text-slate-500">KLE Technological University, Hubballi</span>
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mt-4 leading-tight">${ps.title}</h2>
+            <p class="text-sm text-slate-300 mt-2.5 max-w-3xl leading-relaxed">${ps.subtitle}</p>
+
+            <!-- Topic Tags -->
+            <div class="mt-5 flex flex-wrap gap-2">
+              ${ps.tags.map(t => `<span class="px-2.5 py-1 rounded-lg bg-obsidian border border-borderDark text-[11px] font-mono text-slate-300">${t}</span>`).join('')}
+            </div>
+          </div>
+
+          <div class="p-6 sm:p-10 space-y-12">
+            <!-- SECTION 1: THE PROBLEM STATEMENT (QUESTION) -->
+            <section>
+              <div class="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-emeraldAccent">
+                <span class="w-4 h-px bg-emeraldAccent"></span>
+                <span>01 · Problem Statement (Question)</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mt-1">The <span class="serif-italic text-3xl text-tealAccent">problem</span></h3>
+              <div class="mt-4 rounded-2xl bg-obsidian border border-borderDark p-5 text-sm text-slate-300 leading-relaxed">
+                ${ps.problemBrief}
+              </div>
+
+              <!-- Domain-Specific Technical Tables & Visuals -->
+              <div class="mt-5">
+                ${ps.customVisualHtml}
+              </div>
+            </section>
+
+            <!-- SECTION 2: MINUTES OF MEETING (MoM 1, 2, ...n) -->
+            <section>
+              <div class="flex flex-wrap items-center justify-between gap-3">
+                <div>
+                  <div class="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-emeraldAccent">
+                    <span class="w-4 h-px bg-emeraldAccent"></span>
+                    <span>02 · Chronological Records</span>
+                  </div>
+                  <h3 class="text-2xl font-bold text-white mt-1">Minutes of <span class="serif-italic text-3xl text-tealAccent">meeting</span></h3>
+                </div>
+                <button onclick="addMom(${ps.id})" class="no-print px-3.5 py-1.5 rounded-full text-xs font-mono bg-obsidian border border-borderDark text-emeraldAccent hover:border-emeraldAccent transition">
+                  + Add Meeting Log
+                </button>
+              </div>
+
+              <div class="mt-5 space-y-6">
+                ${ps.moms.map((mom, mIdx) => `
+                  <div class="rounded-2xl border border-emeraldAccent/25 bg-obsidian p-5 sm:p-6 shadow-lg">
+                    <div class="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-borderDark">
+                      <div>
+                        <span class="px-2.5 py-0.5 rounded-full bg-gradient-to-r from-emeraldAccent to-tealAccent text-obsidian text-[10px] font-mono font-bold">
+                          MEETING LOG #0${mIdx + 1}
+                        </span>
+                        <h4 class="text-lg font-bold text-white mt-2">${mom.title}</h4>
+                      </div>
+                      ${ps.moms.length > 1 ? `<button onclick="deleteMom(${ps.id}, ${mIdx})" class="no-print text-xs font-mono text-rose-400 hover:underline">Remove</button>` : ''}
+                    </div>
+
+                    <div class="mt-5 grid grid-cols-1 lg:grid-cols-12 gap-6">
+                      <!-- Meeting Photo -->
+                      <div class="lg:col-span-5">
+                        <div class="relative rounded-xl overflow-hidden border border-borderDark bg-surface aspect-video">
+                          <img src="${mom.image}" onerror="this.onerror=null;this.src='${mom.fallbackImage || 'https://placehold.co/800x450/0F1418/34D399?text=Local+Meeting+Photo'}';" alt="${mom.title}" class="w-full h-full object-cover" />
+                        </div>
+                      </div>
+
+                      <!-- Metadata & Points Discussed -->
+                      <div class="lg:col-span-7 space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs">
+                          <div class="p-3 rounded-xl bg-surface border border-borderDark">
+                            <div class="text-[10px] font-mono uppercase text-slate-500">Date & Time</div>
+                            <div class="font-mono text-slate-200 mt-1">${mom.dateTime}</div>
+                          </div>
+                          <div class="p-3 rounded-xl bg-surface border border-borderDark">
+                            <div class="text-[10px] font-mono uppercase text-slate-500">Venue</div>
+                            <div class="text-slate-200 mt-1">${mom.venue}</div>
+                          </div>
+                          <div class="p-3 rounded-xl bg-surface border border-borderDark">
+                            <div class="text-[10px] font-mono uppercase text-slate-500">Attendees</div>
+                            <div class="text-slate-200 mt-1">${mom.attendees}</div>
+                          </div>
+                        </div>
+
+                        <div>
+                          <div class="text-[11px] font-mono uppercase text-emeraldAccent mb-1.5">Points Discussed</div>
+                          <ul class="space-y-1.5 text-xs sm:text-sm text-slate-300">
+                            ${mom.points.map(pt => `<li class="flex items-start gap-2"><span class="text-emeraldAccent">•</span><span>${pt}</span></li>`).join('')}
+                          </ul>
+                        </div>
+
+                        <!-- Action Items Table -->
+                        <div class="overflow-x-auto pt-2">
+                          <table class="w-full text-xs text-left border-collapse">
+                            <thead>
+                              <tr class="border-b border-borderDark text-[10px] font-mono uppercase text-slate-500">
+                                <th class="py-1.5">Action Item</th>
+                                <th class="py-1.5">Owner</th>
+                                <th class="py-1.5 text-right">Status</th>
+                              </tr>
+                            </thead>
+                            <tbody class="divide-y divide-borderDark/50 text-slate-300">
+                              ${(mom.actions || []).map(ac => `
+                                <tr>
+                                  <td class="py-1.5">${ac.task}</td>
+                                  <td class="py-1.5 font-mono text-slate-400">${ac.owner}</td>
+                                  <td class="py-1.5 text-right font-mono text-emeraldAccent">${ac.status}</td>
+                                </tr>
+                              `).join('')}
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </section>
+
+            <!-- SECTION 3: SOLUTIONS (SITE VISITED & ENGINEER INTERACTION) -->
+            <section>
+              <div class="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-emeraldAccent">
+                <span class="w-4 h-px bg-emeraldAccent"></span>
+                <span>03 · Field Validation & Technical Solution</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mt-1">Solutions & <span class="serif-italic text-3xl text-tealAccent">site interaction</span></h3>
+
+              <div class="mt-4 grid grid-cols-1 lg:grid-cols-12 gap-5">
+                <!-- Site Visited & Engineer Interaction Card -->
+                <div class="lg:col-span-5 rounded-2xl bg-gradient-to-b from-[#0E1E1B] to-obsidian border border-emeraldAccent/30 p-5 space-y-4">
+                  <div class="text-[11px] font-mono uppercase text-emeraldAccent font-semibold">Site Visit & Engineer Interaction</div>
+                  <div class="relative rounded-xl overflow-hidden border border-borderDark bg-surface aspect-video">
+                    <img src="${ps.siteVisit.image || `ps${ps.id}-site.jpg`}" onerror="this.onerror=null;this.src='https://placehold.co/800x450/0F1418/34D399?text=Place+ps${ps.id}-site.jpg+in+same+folder';" alt="${ps.siteVisit.siteName}" class="w-full h-full object-cover" />
+                  </div>
+                  <div>
+                    <div class="text-[10px] font-mono uppercase text-slate-500">Site Visited</div>
+                    <div class="text-sm font-semibold text-white mt-0.5">${ps.siteVisit.siteName}</div>
+                  </div>
+                  <div class="grid grid-cols-2 gap-3 pt-2 border-t border-borderDark">
+                    <div>
+                      <div class="text-[10px] font-mono uppercase text-slate-500">Visit Date</div>
+                      <div class="text-xs font-mono text-slate-200 mt-0.5">${ps.siteVisit.date}</div>
+                    </div>
+                    <div>
+                      <div class="text-[10px] font-mono uppercase text-slate-500">Engineer Met</div>
+                      <div class="text-xs text-slate-200 mt-0.5">${ps.siteVisit.engineer}</div>
+                    </div>
+                  </div>
+                  <div class="pt-2 border-t border-borderDark">
+                    <div class="text-[10px] font-mono uppercase text-slate-500">Interaction Notes</div>
+                    <p class="text-xs text-slate-300 mt-1 leading-relaxed">${ps.siteVisit.notes}</p>
+                  </div>
+                </div>
+
+                <!-- Proposed Engineering Solutions -->
+                <div class="lg:col-span-7 space-y-3">
+                  ${ps.solutions.map((sol, sIdx) => `
+                    <div class="rounded-2xl bg-obsidian border border-borderDark p-4 flex items-start gap-3.5">
+                      <span class="w-6 h-6 rounded-full bg-emeraldAccent/15 border border-emeraldAccent/40 text-emeraldAccent font-mono text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">0${sIdx + 1}</span>
+                      <div>
+                        <h4 class="text-sm font-bold text-white">${sol.title}</h4>
+                        <p class="text-xs text-slate-300 mt-1 leading-relaxed">${sol.detail}</p>
+                      </div>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+            </section>
+
+            <!-- SECTION 4 & 5: REFLECTION & CONCLUSION -->
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+              <div class="rounded-2xl bg-obsidian border border-borderDark p-6">
+                <div class="text-[11px] font-mono uppercase text-tealAccent">04 · Reflection</div>
+                <h4 class="text-xl font-bold text-white mt-1">Engineering <span class="serif-italic text-2xl text-tealAccent">reflection</span></h4>
+                <p class="text-xs sm:text-sm text-slate-300 mt-3 leading-relaxed">
+                  ${ps.reflection}
+                </p>
+              </div>
+
+              <div class="rounded-2xl bg-gradient-to-br from-[#0E1E1B] to-obsidian border border-emeraldAccent/30 p-6">
+                <div class="text-[11px] font-mono uppercase text-emeraldAccent">05 · Conclusion</div>
+                <h4 class="text-xl font-bold text-white mt-1">Key <span class="serif-italic text-2xl text-emeraldAccent">conclusion</span></h4>
+                <p class="text-xs sm:text-sm text-slate-200 mt-3 leading-relaxed">
+                  ${ps.conclusion}
+                </p>
+              </div>
+            </section>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    // Navigation & State Helpers
+    function selectPS(id) {
+      activePSId = id;
+      showAll = false;
+      renderSwitcherPills();
+      renderCaseStudies();
+    }
+
+    function toggleShowAll() {
+      showAll = !showAll;
+      renderSwitcherPills();
+      renderCaseStudies();
+    }
+
+    function addMom(psId) {
+      const ps = state.find(p => p.id === psId);
+      if (!ps) return;
+      const n = ps.moms.length + 1;
+      const psAssets = IMAGE_ASSETS[`ps${psId}`] || {};
+      const mappedImg = psAssets[`mom${n}`] || `ps${psId}-mom${n}.jpg`;
+      ps.moms.push({
+        title: `MoM 0${n} — Follow-Up Engineering Review`,
+        dateTime: "[Date · Time]",
+        venue: "School of Civil Engineering, KLE Tech",
+        attendees: "Apurva Dyaberi & Team Members",
+        image: mappedImg,
+        fallbackImage: `https://placehold.co/800x450/0F1418/34D399?text=Place+${mappedImg}+in+same+folder`,
+        points: ["[Add discussion point 1]", "[Add engineering decision 2]"],
+        actions: [{ task: "[Action deliverable]", owner: "Apurva", status: "Completed" }]
+      });
+      saveState(true);
+      renderCaseStudies();
+    }
+
+    function deleteMom(psId, idx) {
+      const ps = state.find(p => p.id === psId);
+      if (ps && ps.moms.length > 1) {
+        ps.moms.splice(idx, 1);
+        saveState(true);
+        renderCaseStudies();
+      }
+    }
+
+    function resetPortfolio() {
+      localStorage.removeItem('apurva_csm_portfolio_v2');
+      state = JSON.parse(JSON.stringify(initialData));
+      renderBentoGrid();
+      renderSwitcherPills();
+      renderCaseStudies();
+      showToast("Reset to default portfolio content");
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      // Load Portrait from IMAGE_ASSETS.portrait (with fallback placeholder)
+      const portraitEl = document.getElementById('hero-portrait-img');
+      portraitEl.onerror = function() {
+        this.onerror = null;
+        this.src = "https://placehold.co/600x720/0F1418/34D399?text=Place+portrait.jpg%0Ain+same+folder";
+      };
+      portraitEl.src = IMAGE_ASSETS.portrait;
+
+      // Load Working Session Gallery Images from IMAGE_ASSETS.sessions
+      for (let i = 0; i < 5; i++) {
+        const sessionEl = document.getElementById(`session-img-${i}`);
+        const localFilename = IMAGE_ASSETS.sessions[i] || `session${i + 1}.jpg`;
+        sessionEl.onerror = function() {
+          this.onerror = null;
+          this.src = `https://placehold.co/800x550/0F1418/34D399?text=Place+${localFilename}+in+same+folder`;
+        };
+        sessionEl.src = localFilename;
+      }
+
+      renderBentoGrid();
+      renderSwitcherPills();
+      renderCaseStudies();
+    });
+  </script>
+</body>
+</html>
